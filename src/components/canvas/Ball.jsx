@@ -10,7 +10,7 @@ const Ball = (props) => {
   console.log(decal)
   
   return (
-    <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
+    <Float speed={8.75} rotationIntensity={1} floatIntensity={2}>
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]}/>
 
@@ -28,6 +28,7 @@ const Ball = (props) => {
         />
         <Decal 
           position={[0, 0, 1]}
+          scale={0.75}
           rotation={[2 * Math.PI, 0, 6.25]}
           map={decal}
         />
